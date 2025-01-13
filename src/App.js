@@ -98,7 +98,10 @@ export default function App () {
         </div>
               {SelectionAmi && <FormFermeture 
               SelectionAmi={SelectionAmi} 
-              onFacturePartager={PasserFacturePartager} />}
+              onFacturePartager={PasserFacturePartager} 
+              key={SelectionAmi.id}
+              
+              />}
       </div>
   );
 }
